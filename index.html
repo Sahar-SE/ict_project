@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Twin Times</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section class="nav-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center position-relative">
+                <div class="logo">twin times.</div>
+                <button class="mobile-menu-toggle" aria-expanded="false">☰</button>
+                <ul class="menu" id="mainMenu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="tour.html">tour</a></li>
+                        <li><a href="about.html">about us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-text-item">
+                <h1>Find your Next tour!</h1>
+                <form class="form">
+                    <input type="text" list="mylist" placeholder="Where would you like to go?">
+                    <datalist id="mylist">
+                        <option>Pakistan Monument (Islamabad)</option>
+                        <option>Badshahi Mosque (Lahore)</option>
+                        <option>Lahore Fort & Shalimar Gardens (Lahore)</option>
+                        <option>Faisal Mosque (Islamabad)</option>
+                        <option>Minar-e-Pakistan (Lahore)</option>
+                        <option>Rohtas Fort (Jhelum)</option>
+                        <option>Mohenjo-Daro (Sindh)</option>
+                        <option>Hunza Valley (Gilgit-Baltistan)</option>
+                        <option>Skardu & Shangrila Lake (Gilgit-Baltistan)</option>
+                        <option>Fairy Meadows (near Nanga Parbat)</option>
+                        <option>Swat Valley (Khyber Pakhtunkhwa)</option>
+                        <option>Deosai National Park (Gilgit-Baltistan)</option>
+                        <option>Karachi Clifton Beach & Quaid-e-Azam Mausoleum</option>
+                        <option>Murree (Punjab)</option>
+                        <option>Ranikot Fort (Sindh)</option>
+                    </datalist>
+                    <input type="date" class="date">
+                    <a href="tour.html" class="book">book</a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Places Section -->
+    <section class="places">
+        <div class="container">
+            <div class="places-text">
+                <h3>FEATURED TOURS PACKAGES</h3>
+                <h2>Favourite Places</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/d0/91/51/mesmerizing-view-of-fairy.jpg?w=1200&h=-1&s=1" alt="Fairy Meadows">
+                        </div>
+                        <div class="text">
+                            <h2>Fairy Meadows</h2>
+                            <p>A lush alpine meadow at 3,300 m, offering stunning views of Nanga Parbat, the world’s ninth-highest peak.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/d0/91/51/mesmerizing-view-of-fairy.jpg?w=1200&h=-1&s=1" 
+                                data-description="Fairy Meadows is a beautiful alpine meadow located in northern Pakistan.
+                                    It lies in the Gilgit-Baltistan region, near the base of Nanga Parbat.
+                                    Nanga Parbat is the 9th highest mountain in the world.
+                                    Fairy Meadows sits at an altitude of about 3,300 meters.
+                                    The area is known for its lush green grasslands.
+                                    It offers breathtaking views of snow-covered peaks.
+                                    The name “Fairy Meadows” was given by German climbers.
+                                    Locally, it is called “Joot” by the indigenous people.
+                                    The meadow is surrounded by dense pine forests.
+                                    It is a popular destination for trekkers and nature lovers.
+                                    Access requires a jeep ride on a narrow mountain road.
+                                    After the jeep track, a hike of several hours is needed.
+                                    The climate is cool in summer and very cold in winter.
+                                    Wildflowers bloom beautifully during spring and summer.
+                                    Camping is a common activity in Fairy Meadows.
+                                    The area is ideal for photography and stargazing.
+                                    Local wooden huts are available for accommodation.
+                                    Fairy Meadows is close to the Raikot Glacier.
+                                    It remains inaccessible during heavy snowfall.
+                                    The place is often described as one of the most scenic spots in Pakistan."
+                                data-latitude="35.4211" data-longitude="74.5890">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.30,000/ Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 7 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://tse2.mm.bing.net/th/id/OIP.9vwY6VEMDEcZQp-6X1maHQHaFO?cb=ucfimg2&ucfimg=1&w=1200&h=846&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Skardu">
+                        </div>
+                        <div class="text">
+                            <h2>Skardu and Shangrila lake</h2>
+                            <P>Skardu is a gateway to Karakoram peaks; Shangrila Lake (Lower Kachura) is a serene alpine lake with a resort.</P>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://tse2.mm.bing.net/th/id/OIP.9vwY6VEMDEcZQp-6X1maHQHaFO?cb=ucfimg2&ucfimg=1&w=1200&h=846&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                                data-description="Skardu is a major town in the Gilgit-Baltistan region of Pakistan.
+                                    It is surrounded by some of the world’s highest mountain ranges.
+                                    Skardu serves as a gateway to famous peaks like K2 and Gasherbrum.
+                                    The town lies along the Indus River.
+                                    Skardu is known for its cold desert landscape.
+                                    It has a rich Balti culture and traditions.
+                                    Tourism is the main source of income for locals.
+                                    The best time to visit Skardu is from May to September.
+                                    Skardu is famous for its lakes, forts, and valleys.
+                                    Shangrila Lake is one of the most popular attractions near Skardu.
+                                    Shangrila Lake is also called Lower Kachura Lake.
+                                    It is located about 25 kilometers from Skardu city.
+                                    The lake is surrounded by lush green gardens.
+                                    Its crystal-clear blue water attracts many visitors.
+                                    Shangrila Resort was built beside the lake.
+                                    The resort has a unique airplane-shaped restaurant.
+                                    Snow-capped mountains reflect beautifully in the lake.
+                                    The area is ideal for relaxation and photography.
+                                    Shangrila Lake looks stunning in all seasons.
+                                    Together, Skardu and Shangrila Lake showcase natural beauty of Pakistan."
+                                data-latitude="35.3333" data-longitude="75.5489">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.35,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__lWCOu784s8kW04ePAs2fmUWDwE98g9l4g&s" alt="Hunza">
+                        </div>
+                        <div class="text">
+                            <h2>Hunza and Nagar Valley</h2>
+                            <p>A breathtaking valley along the Hunza River, famous for Rakaposhi views, forts, and Silk Road history.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__lWCOu784s8kW04ePAs2fmUWDwE98g9l4g&s" 
+                                data-description="Hunza Valley is a beautiful mountainous region in Gilgit-Baltistan, Pakistan.
+                                    It is located in the northern part of the country near the Karakoram Range.
+                                    Hunza is famous for its stunning natural scenery and peaceful environment.
+                                    The valley is home to traditional villages and terraced fields.
+                                    Baltit Fort and Altit Fort are major historical landmarks in Hunza.
+                                    Hunza is known for its long-lived and hospitable people.
+                                    The Hunza River flows through the valley.
+                                    Nagar Valley lies adjacent to Hunza Valley across the river.
+                                    Nagar Valley is surrounded by high snow-covered peaks.
+                                    It offers breathtaking views of Rakaposhi and Diran Peak.
+                                    Nagar is less crowded and more traditional than Hunza.
+                                    Both valleys have rich culture and local languages.
+                                    Agriculture is an important part of life in Hunza and Nagar.
+                                    Apricot orchards are common in both valleys.
+                                    The valleys are popular for trekking and mountaineering.
+                                    Spring brings colorful blossoms to the region.
+                                    Autumn is famous for golden and red foliage.
+                                    The Karakoram Highway provides access to both valleys.
+                                    The climate is cool in summer and cold in winter.
+                                    Hunza and Nagar valleys are among the most scenic areas of Pakistan."
+                                data-latitude="36.3121" data-longitude="74.6050">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.45,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://cdn-blog.zameen.com/blog/wp-content/uploads/2019/05/cover-3.jpg" alt="Pakistan Monument">
+                        </div>
+                        <div class="text">
+                            <h2>Pakistan Monument</h2>
+                            <p>A national monument shaped like flower petals, symbolizing Pakistan’s unity and heritage.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://cdn-blog.zameen.com/blog/wp-content/uploads/2019/05/cover-3.jpg" 
+                                data-description="Pakistan Monument is a national monument located in Islamabad, Pakistan.
+                                    It was built to symbolize the unity of the Pakistani people.
+                                    The monument represents the four provinces and three territories of Pakistan.
+                                    It is shaped like a blooming flower.
+                                    The petals reflect the culture and heritage of the country.
+                                    Pakistan Monument was inaugurated in 2007.
+                                    It is located on the Shakarparian Hills.
+                                    The site offers a panoramic view of Islamabad city.
+                                    The monument is a popular tourist attraction.
+                                    It is beautifully illuminated at night.
+                                    The structure is made of granite and concrete.
+                                    Each petal is engraved with artistic designs.
+                                    Pakistan Monument Museum is located beneath the monument.
+                                    The museum showcases Pakistan’s history and independence movement.
+                                    Visitors can learn about national heroes there.
+                                    The area around the monument is well maintained.
+                                    It is a common place for national celebrations.
+                                    Families often visit for sightseeing and photography.
+                                    The monument represents national pride and unity.
+                                    Pakistan Monument is a symbol of Pakistan’s identity."
+                                data-latitude="33.6844" data-longitude="73.0551">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.2500 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 1 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c6/75/fe/badshahi-masjid-lahore.jpg?w=900&h=-1&s=1" alt="Badshahi Mosque">
+                        </div>
+                        <div class="text">
+                            <h2>Badshahi Mosque</h2>
+                            <p>Built in 1673 by Emperor Aurangzeb, it’s one of the largest Mughal mosques, famed for grandeur.</p>
+                            <button class="btn btn-primary read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c6/75/fe/badshahi-masjid-lahore.jpg?w=900&h=-1&s=1" 
+                                data-description="Badshahi Mosque is one of the most famous historical mosques in Pakistan.
+                                    It is located in Lahore, Punjab.
+                                    The mosque was built during the Mughal era.
+                                    It was commissioned by Emperor Aurangzeb.
+                                    Construction was completed in 1673.
+                                    Badshahi Mosque is made of red sandstone and marble.
+                                    It is one of the largest mosques in the world.
+                                    The mosque can accommodate over 100,000 worshippers.
+                                    Its architecture reflects Mughal grandeur and elegance.
+                                    The mosque has three large domes.
+                                    Four tall minarets surround the main structure.
+                                    The courtyard is vast and impressive.
+                                    Badshahi Mosque stands opposite Lahore Fort.
+                                    It remained the largest mosque in the world for many years.
+                                    The mosque has served different purposes in history.
+                                    It was used as a military base during Sikh rule.
+                                    Later, it was restored to its original glory.
+                                    Today, it is a major religious and tourist site.
+                                    The mosque looks especially beautiful at sunset.
+                                    Badshahi Mosque is a symbol of Islamic heritage in Pakistan."
+                                data-latitude="31.5820" data-longitude="74.3294">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.12,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/39/b2/ab/the-shalimar-gardens.jpg?w=1200&h=-1&s=1" alt="Lahore Fort & Shalimar Gardens">
+                        </div>
+                        <div class="text">
+                            <h2>Lahore Fort & Shalimar Gardens</h2>
+                            <p>UNESCO World Heritage sites showcasing Mughal palaces, mosaics, and terraced gardens from Shah Jahan’s era.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/39/b2/ab/the-shalimar-gardens.jpg?w=1200&h=-1&s=1" 
+                                data-description="Lahore Fort is a historic fortress located in the heart of Lahore, Pakistan.
+                                    It is also known as Shahi Qila.
+                                    The fort was rebuilt during the Mughal era.
+                                    Emperor Akbar played a major role in its construction.
+                                    Lahore Fort reflects Mughal, Sikh, and British influences.
+                                    It contains beautiful palaces, halls, and gardens.
+                                    Sheesh Mahal is one of its most famous structures.
+                                    The fort is a UNESCO World Heritage Site.
+                                    It stands next to the Badshahi Mosque.
+
+                                    Shalimar Gardens are located a few kilometers from Lahore Fort.
+                                    They were built by Emperor Shah Jahan in 1641.
+                                    The gardens represent the Mughal love for nature and symmetry.
+                                    They are spread over three terraced levels.
+                                    Each terrace has fountains and flowing water channels.
+                                    The gardens were used for royal leisure and celebrations.
+                                    Shalimar Gardens are also a UNESCO World Heritage Site.
+                                    They feature marble pavilions and shaded walkways.
+                                    The gardens are famous for their elegant design.
+                                    Both sites show the glory of Mughal architecture.
+                                    Lahore Fort and Shalimar Gardens are major cultural treasures of Pakistan."
+                                data-latitude="31.5820" data-longitude="74.3294">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.12,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.JdIJoB7HbfflihksPqZlFQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Faisal Mosque">
+                        </div>
+                        <div class="text">
+                            <h2>Faisal Mosque</h2>
+                            <p>Pakistan’s largest mosque, completed in 1986, with a modern tent-inspired design and capacity for 300,000 worshippers.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://tse3.mm.bing.net/th/id/OIP.JdIJoB7HbfflihksPqZlFQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                                data-description="Faisal Mosque is the largest mosque in Pakistan.
+                                    It is located in Islamabad at the foothills of the Margalla Hills.
+                                    The mosque was named after King Faisal of Saudi Arabia.
+                                    It was designed by Turkish architect Vedat Dalokay.
+                                    Construction began in 1976 and was completed in 1986.
+                                    The mosque has a unique modern architectural design.
+                                    It is inspired by the shape of a Bedouin tent.
+                                    Unlike traditional mosques, it has no central dome.
+                                    The mosque has four tall minarets.
+                                    Each minaret is 80 meters high.
+                                    Faisal Mosque can accommodate around 100,000 worshippers.
+                                    The interior is simple yet elegant.
+                                    Verses from the Quran decorate the main prayer hall.
+                                    The mosque is a major religious landmark.
+                                    It is visible from many parts of Islamabad.
+                                    Tourists from around the world visit the mosque.
+                                    The surrounding area is peaceful and scenic.
+                                    The mosque looks stunning at night.
+                                    Faisal Mosque represents Islamic unity and modern design.
+                                    It is a symbol of Islamabad and Pakistan.
+                                    "
+                                data-latitude="33.6844" data-longitude="73.0479">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.2000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 1 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1673620480/minar_e_pakistan_tower_of_pakistan.jpg" alt="Minar-e-Pakistan ">
+                        </div>
+                        <div class="text">
+                            <h2>Minar-e-Pakistan </h2>
+                            <p>A 230 ft tower built to commemorate the 1940 Lahore Resolution, marking the demand for Pakistan.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1673620480/minar_e_pakistan_tower_of_pakistan.jpg" 
+                                data-description="Minar-e-Pakistan is a national monument located in Lahore, Pakistan.
+                                    It stands in Iqbal Park near the Badshahi Mosque.
+                                    The monument was built to commemorate the Lahore Resolution of 1940.
+                                    This resolution later led to the creation of Pakistan.
+                                    Minar-e-Pakistan symbolizes freedom and independence.
+                                    Construction began in 1960.
+                                    It was completed in 1968.
+                                    The monument is about 70 meters high.
+                                    Its design combines Islamic, Mughal, and modern architecture.
+                                    The base of the minar is shaped like a flower.
+                                    Verses from the Quran and national texts are inscribed on it.
+                                    The monument is made of reinforced concrete and marble.
+                                    An elevator and stairs lead to the top.
+                                    The top offers a view of Lahore city.
+                                    Minar-e-Pakistan is a popular tourist attraction.
+                                    It is a site for national celebrations.
+                                    Many people visit it on Independence Day.
+                                    The surrounding park is well maintained.
+                                    The monument reflects national pride.
+                                    Minar-e-Pakistan is a symbol of Pakistan’s struggle for freedom."
+                                data-latitude="31.5204" data-longitude="74.3587">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.12,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://wpassets.graana.com/blog/wp-content/uploads/2023/06/1-Aerial-View-of-Rohtas-Fort.jpg" alt="Rohtas Fort ">
+                        </div>
+                        <div class="text">
+                            <h2>Rohtas Fort </h2>
+                            <p>A massive 16th-century fortress built by Sher Shah Suri, never conquered by force, now a UNESCO site.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://wpassets.graana.com/blog/wp-content/uploads/2023/06/1-Aerial-View-of-Rohtas-Fort.jpg" 
+                                data-description="Rohtas Fort is a historic fortress located near Jhelum in Punjab, Pakistan.
+                                    It was built in the 16th century by Sher Shah Suri.
+                                    The fort was constructed to suppress the Mughal ruler Humayun.
+                                    Rohtas Fort is a fine example of military architecture.
+                                    It covers an area of about 70 hectares.
+                                    The fort has massive stone walls.
+                                    Its walls are over 10 meters high in some places.
+                                    Rohtas Fort has 12 grand gates.
+                                    Each gate has unique architectural features.
+                                    Sohail Gate is the most famous entrance.
+                                    The fort includes mosques, wells, and residences.
+                                    It was never stormed by enemy forces.
+                                    Rohtas Fort blends Afghan and Hindu architectural styles.
+                                    The fort is strategically built on a hill.
+                                    It offers views of the surrounding countryside.
+                                    Rohtas Fort is a UNESCO World Heritage Site.
+                                    It is remarkably well preserved.
+                                    The fort attracts historians and tourists.
+                                    Rohtas Fort reflects the strength of its era.
+                                    It is one of Pakistan’s greatest historical landmarks."
+                                data-latitude="33.5860" data-longitude="72.3926">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.12,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://i.dawn.com/primary/2017/02/58ad639b4f944.jpg" alt="Mohenjo-Daro">
+                        </div>
+                        <div class="text">
+                            <h2>Mohenjo-Daro</h2>
+                            <p>Ancient Indus Valley city (c. 2500 BCE), known for advanced urban planning; UNESCO World Heritage site.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://i.dawn.com/primary/2017/02/58ad639b4f944.jpg" 
+                                data-description="Mohenjo-Daro is an ancient archaeological site located in Sindh, Pakistan.
+                                    It was one of the largest cities of the Indus Valley Civilization.
+                                    The city flourished around 2500 BCE.
+                                    Mohenjo-Daro means “Mound of the Dead.”
+                                    It was discovered in 1922 by archaeologists.
+                                    The city shows advanced urban planning.
+                                    Streets were laid out in a grid pattern.
+                                    Houses were made of baked bricks.
+                                    The city had an efficient drainage system.
+                                    The Great Bath is its most famous structure.
+                                    Granaries and public buildings were well organized.
+                                    Mohenjo-Daro suggests a highly developed society.
+                                    People practiced agriculture and trade.
+                                    Standardized weights and measures were used.
+                                    The script of the Indus Valley people is still undeciphered.
+                                    The city declined for unknown reasons.
+                                    Mohenjo-Daro is a UNESCO World Heritage Site.
+                                    It is an important source of ancient history.
+                                    The site faces damage due to weather and erosion.
+                                    Mohenjo-Daro represents one of the world’s earliest civilizations.
+                                    "
+                                data-latitude="27.3314" data-longitude="68.1395">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.18,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://th.bing.com/th/id/R.3e5299f1774084f4d8bd7cdc02a72205?rik=Jv7yU6gjnqVIHg&pid=ImgRaw&r=0" alt="Swat Valley">
+                        </div>
+                        <div class="text">
+                            <h2>Swat Valley</h2>
+                            <p>Known as the “Switzerland of Pakistan,” it features rivers, lakes, and Buddhist heritage sites.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://th.bing.com/th/id/R.3e5299f1774084f4d8bd7cdc02a72205?rik=Jv7yU6gjnqVIHg&pid=ImgRaw&r=0" 
+                                data-description="Swat Valley is a picturesque valley located in Khyber Pakhtunkhwa, Pakistan.
+                                    It is often called the “Switzerland of the East” because of its natural beauty.
+                                    The Swat River flows through the valley.
+                                    Swat Valley is surrounded by high mountains and lush green hills.
+                                    It has a rich history dating back to ancient Buddhist civilizations.
+                                    The valley was once part of the Gandhara civilization.
+                                    Udegram and Butkara Stupa are important archaeological sites.
+                                    Swat is famous for its dense forests and alpine meadows.
+                                    The region experiences cold winters and mild summers.
+                                    Malakand Pass connects Swat to the rest of Pakistan.
+                                    Tourism is a major source of income in the valley.
+                                    Popular tourist spots include Mingora, Saidu Sharif, and Kalam.
+                                    Swat Valley is known for rivers, lakes, and waterfalls.
+                                    Fruits like peaches, apples, and apricots grow abundantly here.
+                                    The valley offers opportunities for trekking, fishing, and skiing.
+                                    Swat is home to the friendly Pashtun people.
+                                    The valley is rich in cultural traditions and festivals.
+                                    The area was restored as a safe tourist destination in recent years.
+                                    Swat Valley attracts photographers and nature lovers from around the world.
+                                    It is considered one of Pakistan’s most scenic and peaceful regions.
+                                    "
+                                data-latitude="35.2225" data-longitude="72.3625">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.12,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.LAC3jGXtgcfB4Sj-9sbmPQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deosai National Park">
+                        </div>
+                        <div class="text">
+                            <h2>Deosai National Park</h2>
+                            <p>The “Land of Giants,” a vast plateau at 4,114 m, home to Himalayan brown bears and Sheosar Lake.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://tse3.mm.bing.net/th/id/OIP.LAC3jGXtgcfB4Sj-9sbmPQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                                data-description="Deosai National Park is a high-altitude national park in Gilgit-Baltistan, Pakistan.
+                                    It is also known as the “Land of Giants.”
+                                    The park is located on the Deosai Plains at an average altitude of 4,114 meters (13,497 feet).
+                                    Deosai covers an area of around 3,000 square kilometers.
+                                    It is famous for its vast grassy plains and unique wildlife.
+                                    The park is home to the Himalayan brown bear, an endangered species.
+                                    Other animals include ibex, snow leopards, and wolves.
+                                    Deosai National Park blooms with colorful wildflowers in summer.
+                                    It remains covered in snow for much of the winter.
+                                    The Sheosar Lake, located within the park, is a major attraction.
+                                    The park is a paradise for nature lovers, hikers, and photographers.
+                                    Camping is a popular activity in the park during the summer.
+                                    The park is known for clear skies and stunning starry nights.
+                                    Deosai is part of the Himalayan ecosystem and important for biodiversity.
+                                    It was declared a national park in 1993 to protect wildlife.
+                                    The park provides grazing grounds for migratory birds.
+                                    Access to Deosai is mainly from Skardu or Astore.
+                                    The climate is harsh, with strong winds and low temperatures.
+                                    Deosai National Park is a symbol of Pakistan’s natural beauty.
+                                    It is considered one of the highest plateaus in the world."
+                                data-latitude="35.3333" data-longitude="75.5833">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.30,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fc/35/32/karachi-clifton-beach.jpg?w=700&h=400&s=1" alt="Karachi Clifton Beach">
+                        </div>
+                        <div class="text">
+                            <h2>Karachi Clifton Beach </h2>
+                            <p>Clifton Beach is a popular seaside spot</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fc/35/32/karachi-clifton-beach.jpg?w=700&h=400&s=1" 
+                                data-description="
+                                    Clifton Beach is a famous seaside destination in Karachi, Pakistan.
+                                    It is located along the Arabian Sea in the Clifton area of the city.
+                                    The beach is one of the most popular recreational spots in Karachi.
+                                    Clifton Beach attracts both locals and tourists.
+                                    The coastline stretches for several kilometers.
+                                    Visitors enjoy camel and horse rides along the shore.
+                                    The beach is known for its beautiful sunsets over the Arabian Sea.
+                                    People often visit for picnics and family outings.
+                                    Food stalls and snack vendors are common near the beach.
+                                    Clifton Beach is safe for casual swimming, though strong waves can occur.
+                                    The area is well-connected and easy to access from the city.
+                                    Nearby attractions include the Dolmen Mall and Karachi Zoo.
+                                    The beach is a popular spot for photography.
+                                    During weekends and holidays, it gets crowded with visitors.
+                                    Local fishermen can sometimes be seen along the shore.
+                                    Environmental concerns include littering and water pollution.
+                                    Efforts are being made to keep the beach clean.
+                                    Clifton Beach hosts occasional cultural and recreational events.
+                                    The beach is a symbol of Karachi’s coastal lifestyle.
+                                    It is considered one of the main tourist attractions of the city.
+                                    "
+                                data-latitude="24.8043" data-longitude="67.0369">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.18,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/A_beautiful_view_of_Murree%2C_Pakistan.jpg" alt="Murree">
+                        </div>
+                        <div class="text">
+                            <h2>Murree</h2>
+                            <p>A colonial-era hill station at 2,291 m, famous for pine forests, Mall Road, and snow in winter.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://upload.wikimedia.org/wikipedia/commons/4/4a/A_beautiful_view_of_Murree%2C_Pakistan.jpg" 
+                                data-description="Murree is a popular hill station located in Punjab, Pakistan.
+                                    It lies in the foothills of the Himalayas.
+                                    Murree is about 2,300 meters above sea level.
+                                    It is known for its cool climate and scenic beauty.
+                                    Murree is a favorite summer resort for tourists.
+                                    The town is surrounded by pine and oak forests.
+                                    Mall Road is the main tourist area in Murree.
+                                    Visitors enjoy shopping and local food there.
+                                    Murree receives heavy snowfall in winter.
+                                    It becomes a popular winter destination.
+                                    The area offers beautiful views of surrounding hills.
+                                    Patriata, also called New Murree, is nearby.
+                                    Chairlifts and cable cars are major attractions.
+                                    Murree was developed during British rule.
+                                    It served as a summer headquarters for the British.
+                                    Hotels and resorts are widely available.
+                                    Murree is easily accessible from Islamabad.
+                                    The town can get crowded during peak seasons.
+                                    Murree is ideal for family trips.
+                                    It is one of Pakistan’s most famous tourist destinations."
+                                data-latitude="33.9095" data-longitude="73.3932">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.7000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <div class="zoom-img">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg/500px-Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg" alt="Ranikot Fort ">
+                        </div>
+                        <div class="text">
+                            <h2>Ranikot Fort </h2>
+                            <p>Known as the “Great Wall of Sindh,” it’s one of the world’s largest forts, spanning 32 km.</p>
+                            <button class="btn read-more" data-bs-toggle="modal" data-bs-target="#placeModal" 
+                                data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg/500px-Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg" 
+                                data-description="Ranikot Fort is a massive historical fort located in Sindh, Pakistan.
+                                    It is situated in the Jamshoro District near the Kirthar Range.
+                                    Ranikot Fort is often called the “Great Wall of Sindh.”
+                                    The fort covers an area of about 26 kilometers in circumference.
+                                    It is considered one of the largest forts in the world.
+                                    The origins of Ranikot Fort are still debated by historians.
+                                    Some believe it was built in the 17th century.
+                                    The fort has thick stone walls and strong bastions.
+                                    Several gates provide access to the fort.
+                                    Sann Gate is the main entrance.
+                                    The fort includes smaller inner forts.
+                                    Miri Fort is located inside Ranikot Fort.
+                                    The fort was used for defense and protection.
+                                    Ranikot Fort is built on rugged hills.
+                                    It offers stunning views of the surrounding landscape.
+                                    The area is rich in history and mystery.
+                                    Ranikot Fort is a popular tourist attraction.
+                                    It attracts historians, archaeologists, and travelers.
+                                    The site remains partly unexplored.
+                                    Ranikot Fort is an important heritage site of Pakistan."
+                                data-latitude="25.3861" data-longitude="68.1528">
+                                Read More
+                            </button>
+                            <p class="cost">Rs.19,000 / Per Person</p>
+                            <div class="card-box">
+                                <p class="time">🕓 3 Days</p>
+                                <p class="location">✈</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.Kj-8oP7pY5NmH1KEeKV6fwHaEc?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Guides">
+                        <h2>8000+ Our Local Guides</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.jvnJW2yo2OpVfbb85js_MQHaHa?cb=ucfimg2&ucfimg=1&w=691&h=691&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Trust">
+                        <h2>100% Trusted Tour Agency</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <img src="https://dailytimes.com.pk/assets/uploads/2021/04/08/skarduu.jpg" alt="Experience">
+                        <h2>28+ Years of Travel Experience</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.90a3ST5j00lWCLWumS8uZQHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Happy">
+                        <h2>98% Our Travelers are Happy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li>Offers & Discounts</li>
+                            <li>Get Coupon</li>
+                            <li>Contact Us</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li>Mountain Tours</li>
+                            <li>City Tours</li>
+                            <li>Cultural Tours</li>
+                            <li>Adventure Packages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="links">
+                        <h3>Support</h3>
+                        <ul>
+                            <li>Frequently Asked Questions</li>
+                            <li>Report a Payment Issue</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>&copy; 2025 Twin Times. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="placeModal" tabindex="-1" aria-labelledby="placeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="placeModalLabel">Place Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Place Image" class="img-fluid mb-3">
+                    <div id="modalWeather" class="mb-3">
+                        <div>
+                            <span id="dayNightSticker" style="font-size: 2rem; margin-right: 10px;"></span>
+                            <span id="dayNightText">Day/Night</span>
+                        </div>
+                        <div>
+                            <span id="weatherIcon" style="font-size: 2rem; margin-right: 10px;"></span>
+                            <span id="weatherConditionText">Weather Condition</span>
+                        </div>
+                        <div>
+                            <span id="weatherText">Loading weather...</span>
+                        </div>
+                    </div>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle the modal population
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const image = button.getAttribute('data-image');
+                const description = button.getAttribute('data-description');
+                const latitude = button.getAttribute('data-latitude');
+                const longitude = button.getAttribute('data-longitude');
+
+                document.getElementById('modalImage').src = image;
+                document.getElementById('modalDescription').innerText = description;
+
+                // Fetch weather data
+                fetch(`https://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${latitude},${longitude}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const weatherIcon = data.current.condition.icon;
+                        const isDay = data.current.is_day;
+                        const dayNightSticker = isDay ? 'path/to/day-sticker.png' : 'path/to/night-sticker.png';
+
+                        document.getElementById('weatherIcon').src = weatherIcon;
+                        document.getElementById('dayNightSticker').src = dayNightSticker;
+                        document.getElementById('weatherText').innerText = `Temperature: ${data.current.temp_c}°C, Condition: ${data.current.condition.text}`;
+                    })
+                    .catch(error => {
+                        document.getElementById('weatherText').innerText = 'Weather data not available';
+                    });
+            });
+        });
+    </script>
+</body>
+</html>

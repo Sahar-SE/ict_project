@@ -21,13 +21,6 @@ body {
     padding: 0 20px;
 }
 
-/* Standardize image sizes */
-img {
-    width: 100%;
-    height: 250px; /* Adjust this value as needed */
-    object-fit: cover;
-}
-
 /* ===== NAVIGATION BAR ===== */
 .nav-bar {
     background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
@@ -72,6 +65,9 @@ img {
     display: block;
     transition: all 0.3s ease;
 }
+
+
+
 
 .menu a:hover {
     background: rgba(255, 255, 255, 0.2);
@@ -187,6 +183,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    z-index:20;
 }
 
 .form input,
@@ -197,6 +194,7 @@ img {
     font-size: 1rem;
     flex: 1;
     min-width: 150px;
+    z-index:20;
 }
 
 .form input::placeholder {
@@ -218,6 +216,7 @@ img {
     border: none;
     cursor: pointer;
     min-width: 120px;
+    z-index:20;
 }
 
 .form .book:hover {
@@ -299,27 +298,20 @@ img {
     margin: 0.5rem 0;
 }
 
-/* Style for the "Read More" button */
-.read-more {
-    background: none;
-    border: none;
-    color: #16a085;
-    text-decoration: underline;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    padding: 0;
-    margin-top: 0.5rem;
-    display: inline-block;
-}
-
-.read-more:hover {
-    color: #1abc9c;
-    text-decoration: none;
-    background: none; /* Prevent blue background on hover */
-}
-
 /* Read more link for cards */
+.read-more {
+    color: #16a085;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.read-more:hover,
+.read-more:focus {
+    text-decoration: underline;
+}
+
 .card-box {
     display: flex;
     justify-content: space-between;
@@ -570,83 +562,6 @@ img {
 .footer ul li:hover {
     color: #27ae60;
     padding-left: 5px;
-}
-
-/* ===== POP-UP MODAL STYLES ===== */
-.modal img {
-    max-width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.modal .modal-body {
-    text-align: center;
-    padding: 2rem;
-}
-
-.modal .modal-body p {
-    font-size: 1.1rem;
-    color: #333;
-    margin-top: 1rem;
-    line-height: 1.6;
-}
-
-/* Add weather condition stickers and day/night stickers */
-.modal .weather-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.modal .weather-icons img {
-    width: 50px;
-    height: 50px;
-    object-fit: contain;
-}
-
-.modal .modal-header {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.modal .modal-content {
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.modal .btn-close {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #000;
-    opacity: 0.9;
-    transition: opacity 0.3s ease, transform 0.2s ease;
-}
-
-.modal .btn-close:hover {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-/* Weather icons and day/night stickers */
-#modalWeather span {
-    display: inline-block;
-    font-size: 1rem;
-    margin-right: 10px;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Modal weather section styles */
-#modalWeather div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5rem;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
