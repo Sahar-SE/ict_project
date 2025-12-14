@@ -13,8 +13,8 @@
       background-image : url("spc.jpg");
       background-size:cover;
       background-position : left;
-  background-repeat: no-repeat;
-}
+      background-repeat: no-repeat;
+    }
 
 
     body, html, #app {
@@ -51,7 +51,6 @@
     h1, h2, p {
       margin: 0;
       padding: 0;
-    
       text-shadow: 0 0 20px rgba(0, 0, 0, 1);
       line-height: 100%;
       user-select: none;
@@ -77,10 +76,8 @@
       bottom: 0;
       left: 0;
       overflow: hidden;
-        width: 100vw;
-         height: 100vh;
-
-
+      width: 100vw;
+      height: 100vh;
     }
     .s{
       color : black;
@@ -116,11 +113,6 @@
   </style>
 </head>
 
-<body>
-
-  <header>
-
-  </header>
 
   <main>
       
@@ -129,10 +121,7 @@
 
     <div class="hero" >
         <h1 style="color : silver;" >User Inquiry Form</h1>
-  <form class="l" action="https://formspree.io/f/mgvgdyel" method="POST"
-
-  
-  style="
+  <form class="l" action="https://formspree.io/f/mgvgdyel" method="POST" style="
  
   display :flex; flex-direction : column; background: #ff4fd967; padding : 20px; margin : 100px;">
     <input class="s" placeholder = "EMAIL" type="email" style="
@@ -298,405 +287,13 @@
         .map(() => "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0'));
     }
   </script>
-=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Twin Times</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <section class="nav-bar">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center position-relative">
-                <div class="logo">twin times.</div>
-                <button class="mobile-menu-toggle" aria-expanded="false">☰</button>
-                <ul class="menu" id="mainMenu">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="tour.html">tour</a></li>
-                        <li><a href="about.html">about us</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Banner -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner-text-item">
-                <h1>Find your Next tour!</h1>
-                <form class="form" style="
-                  z-index:200;
-                ">
-                    <input  type="text" list="mylist" placeholder="Where would you like to go?">
-                    <datalist id="mylist">
-                        <option>Pakistan Monument (Islamabad)</option>
-                        <option>Badshahi Mosque (Lahore)</option>
-                        <option>Lahore Fort & Shalimar Gardens (Lahore)</option>
-                        <option>Faisal Mosque (Islamabad)</option>
-                        <option>Minar-e-Pakistan (Lahore)</option>
-                        <option>Rohtas Fort (Jhelum)</option>
-                        <option>Mohenjo-Daro (Sindh)</option>
-                        <option>Hunza Valley (Gilgit-Baltistan)</option>
-                        <option>Skardu & Shangrila Lake (Gilgit-Baltistan)</option>
-                        <option>Fairy Meadows (near Nanga Parbat)</option>
-                        <option>Swat Valley (Khyber Pakhtunkhwa)</option>
-                        <option>Deosai National Park (Gilgit-Baltistan)</option>
-                        <option>Karachi Clifton Beach & Quaid-e-Azam Mausoleum</option>
-                        <option>Murree (Punjab)</option>
-                        <option>Ranikot Fort (Sindh)</option>
-                    </datalist>
-                    <input type="date" class="date">
-                    <a href="tour.html" class="book">book</a>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Places Section -->
-    <section class="places">
-        <div class="container">
-            <div class="places-text">
-                <h3>FEATURED TOURS PACKAGES</h3>
-                <h2>Favourite Places</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/d0/91/51/mesmerizing-view-of-fairy.jpg?w=1200&h=-1&s=1" alt="Fairy Meadows">
-                        </div>
-                        <div class="text">
-                            <h2>Fairy Meadows</h2>
-                            <P>A lush alpine meadow at 3,300 m, offering stunning views of Nanga Parbat, the world’s ninth-highest peak<a class="read-more" href="tour.html">Read more</a></P>
-                            <p class="cost">Rs.30,000/ Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 7 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://tse2.mm.bing.net/th/id/OIP.9vwY6VEMDEcZQp-6X1maHQHaFO?cb=ucfimg2&ucfimg=1&w=1200&h=846&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Skardu">
-                        </div>
-                        <div class="text">
-                            <h2>skardu and Shangrila lake</h2>
-                            <P>Skardu is a gateway to Karakoram peaks; Shangrila Lake (Lower Kachura) is a serene alpine lake with a resort.<a class="read-more" href="tour.html">Read more</a></P>
-                            <p class="cost">Rs.35,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__lWCOu784s8kW04ePAs2fmUWDwE98g9l4g&s" alt="Hunza">
-                        </div>
-                        <div class="text">
-                            <h2>hunza and nagar valley</h2>
-                            <p>A breathtaking valley along the Hunza River, famous for Rakaposhi views, forts, and Silk Road history.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.45,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://cdn-blog.zameen.com/blog/wp-content/uploads/2019/05/cover-3.jpg" alt="Pakistan Monument">
-                        </div>
-                        <div class="text">
-                            <h2>Pakistan Monument</h2>
-                            <p>A national monument shaped like flower petals, symbolizing Pakistan’s unity and heritage<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.2500 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 1 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c6/75/fe/badshahi-masjid-lahore.jpg?w=900&h=-1&s=1" alt="Badshahi Mosque">
-                        </div>
-                        <div class="text">
-                            <h2>Badshahi Mosque</h2>
-                            <p>Built in 1673 by Emperor Aurangzeb, it’s one of the largest Mughal mosques, famed for grandeur.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.12,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/39/b2/ab/the-shalimar-gardens.jpg?w=1200&h=-1&s=1" alt="Lahore Fort & Shalimar Gardens">
-                        </div>
-                        <div class="text">
-                            <h2>Lahore Fort & Shalimar Gardens</h2>
-                            <p>UNESCO World Heritage sites showcasing Mughal palaces, mosaics, and terraced gardens from Shah Jahan’s era.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.12,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://tse3.mm.bing.net/th/id/OIP.JdIJoB7HbfflihksPqZlFQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Faisal Mosque">
-                        </div>
-                        <div class="text">
-                            <h2>Faisal Mosque</h2>
-                            <p>Pakistan’s largest mosque, completed in 1986, with a modern tent-inspired design and capacity for 300,000 worshippers.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.2000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 1 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://res.cloudinary.com/www-travelpakistani-com/image/upload/v1673620480/minar_e_pakistan_tower_of_pakistan.jpg" alt="Minar-e-Pakistan ">
-                        </div>
-                        <div class="text">
-                            <h2>Minar-e-Pakistan </h2>
-                            <p>A 230 ft tower built to commemorate the 1940 Lahore Resolution, marking the demand for Pakistan.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.12,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://wpassets.graana.com/blog/wp-content/uploads/2023/06/1-Aerial-View-of-Rohtas-Fort.jpg" alt="Rohtas Fort ">
-                        </div>
-                        <div class="text">
-                            <h2>Rohtas Fort </h2>
-                            <p>A massive 16th-century fortress built by Sher Shah Suri, never conquered by force, now a UNESCO site.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.12,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://i.dawn.com/primary/2017/02/58ad639b4f944.jpg" alt="Mohenjo-Daro">
-                        </div>
-                        <div class="text">
-                            <h2>Mohenjo-Daro</h2>
-                            <p>Ancient Indus Valley city (c. 2500 BCE), known for advanced urban planning; UNESCO World Heritage site.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.18,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://th.bing.com/th/id/R.3e5299f1774084f4d8bd7cdc02a72205?rik=Jv7yU6gjnqVIHg&pid=ImgRaw&r=0" alt="Swat Valley">
-                        </div>
-                        <div class="text">
-                            <h2>Swat Valley</h2>
-                            <p>Known as the “Switzerland of Pakistan,” it features rivers, lakes, and Buddhist heritage sites.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.12,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://tse3.mm.bing.net/th/id/OIP.LAC3jGXtgcfB4Sj-9sbmPQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Deosai National Park">
-                        </div>
-                        <div class="text">
-                            <h2>Deosai National Park</h2>
-                            <p>The “Land of Giants,” a vast plateau at 4,114 m, home to Himalayan brown bears and Sheosar Lake.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.30,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/fc/35/32/karachi-clifton-beach.jpg?w=700&h=400&s=1" alt="Karachi Clifton Beach">
-                        </div>
-                        <div class="text">
-                            <h2>Karachi Clifton Beach </h2>
-                            <p>Clifton Beach is a popular seaside spot<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.18,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/A_beautiful_view_of_Murree%2C_Pakistan.jpg" alt="Murree">
-                        </div>
-                        <div class="text">
-                            <h2>Murree</h2>
-                            <p>A colonial-era hill station at 2,291 m, famous for pine forests, Mall Road, and snow in winter.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.7000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card">
-                        <div class="zoom-img">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg/500px-Ranikot_Fort_-_The_Great_Wall_of_Sindh.jpg" alt="Ranikot Fort ">
-                        </div>
-                        <div class="text">
-                            <h2>Ranikot Fort </h2>
-                            <p>Known as the “Great Wall of Sindh,” it’s one of the world’s largest forts, spanning 32 km.<a class="read-more" href="tour.html">Read more</a></p>
-
-                            <p class="cost">Rs.19,000 / Per Person</p>
-                            <div class="card-box">
-                                <p class="time">🕓 3 Days</p>
-                                <p class="location">✈</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="https://tse1.mm.bing.net/th/id/OIP.Kj-8oP7pY5NmH1KEeKV6fwHaEc?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Guides">
-                        <h2>8000+ Our Local Guides</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="https://tse4.mm.bing.net/th/id/OIP.jvnJW2yo2OpVfbb85js_MQHaHa?cb=ucfimg2&ucfimg=1&w=691&h=691&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Trust">
-                        <h2>100% Trusted Tour Agency</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="https://dailytimes.com.pk/assets/uploads/2021/04/08/skarduu.jpg" alt="Experience">
-                        <h2>28+ Years of Travel Experience</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-item">
-                        <img src="https://tse3.mm.bing.net/th/id/OIP.90a3ST5j00lWCLWumS8uZQHaE7?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Happy">
-                        <h2>98% Our Travelers are Happy</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li>Offers & Discounts</li>
-                            <li>Get Coupon</li>
-                            <li>Contact Us</li>
-                            <li>About</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="links">
-                        <h3>Services</h3>
-                        <ul>
-                            <li>Mountain Tours</li>
-                            <li>City Tours</li>
-                            <li>Cultural Tours</li>
-                            <li>Adventure Packages</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="links">
-                        <h3>Support</h3>
-                        <ul>
-                            <li>Frequently Asked Questions</li>
-                            <li>Report a Payment Issue</li>
-                            <li>Terms & Conditions</li>
-                            <li>Privacy Policy</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4 pt-3" style="border-top: 1px solid rgba(255,255,255,0.1);">
-                <p>&copy; 2025 Twin Times. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 
-</body>
+
 </html>
