@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Tour - Twin Times</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+      body {
+        background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+        font-family: 'Segoe UI', sans-serif;
+      }
+
+      .booking-wrapper {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 20px;
+      }
+
+      .booking-card {
+          background: #ffffff;
+          width: 100%;
+          max-width: 700px;
+          border-radius: 12px;
+          padding: 30px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .booking-card h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: #16a085;
+      }
+
+      .tour-info {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #555;
+      }
+
+      .form-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+      }
+
+      .form-group {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .form-group label {
+          font-size: 14px;
+          margin-bottom: 5px;
+          font-weight: 500;
+      }
+
+      .form-group input,
+      .form-group select {
+          padding: 10px;
+          border-radius: 6px;
+          border: 1px solid #ccc;
+          font-size: 14px;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus {
+          border-color: #198754;
+          outline: none;
+      }
+
+      .full-width {
+          grid-column: span 2;
+      }
+
+      .total-box {
+          background: #f8f9fa;
+          padding: 12px;
+          border-radius: 6px;
+          font-weight: 600;
+          text-align: center;
+      }
+
+      .btn-confirm {
+          background: #198754;
+          color: white;
+          padding: 12px;
+          border-radius: 6px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+      }
+
+      .btn-confirm:hover {
+          background: #157347;
+      }
+
+      /* Mobile */
+      @media (max-width: 600px) {
+          .form-grid {
+              grid-template-columns: 1fr;
+          }
+
+          .full-width {
+              grid-column: span 1;
+          }
+      }
+
+    </style>
+</head>
+<body>
+
+      <!-- Navigation Bar -->
+    <section class="nav-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center position-relative">
+                <div class="logo">twin times.</div>
+                <button class="mobile-menu-toggle" aria-expanded="false">☰</button>
+                <ul class="menu" id="mainMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tour.html">Tour</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<div class="booking-wrapper">
+    <div class="booking-card">
+
+        <h2>Tour Booking</h2>
+
+        <div class="tour-info">
+            <p><strong>Tour:</strong> <span id="tourName"></span></p>
+            <p><strong>Price per Person:</strong> Rs. <span id="tourPrice"></span></p>
+        </div>
+
+        <form id="bookingForm">
+
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tour Date</label>
+                    <input type="date" id="tourDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Number of Persons</label>
+                    <input type="number" id="persons" min="1" value="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Select Payment</option>
+                        <option>Cash on Arrival</option>
+                        <option>Bank Transfer</option>
+                        <option>JazzCash / EasyPaisa</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <div class="total-box">
+                        Total Amount: Rs. <span id="totalAmount"></span>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit" class="btn-confirm">
+                        Confirm Booking
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+</script>
+
+<script src="booking.js"></script>
+</body>
+</html>

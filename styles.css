@@ -155,7 +155,7 @@ img {
 
 .page-header {
     background: linear-gradient(rgba(26, 188, 156, 0.9), rgba(22, 160, 133, 0.9)), 
-                url('https://i.pinimg.com/736x/58/fc/0b/58fc0b7a61180c7d3e5089899302b3db.jpg') center/cover;
+    url('https://i.pinimg.com/736x/58/fc/0b/58fc0b7a61180c7d3e5089899302b3db.jpg') center/cover;
     padding: 5rem 0;
     text-align: center;
     color: white;
@@ -1018,16 +1018,16 @@ section {
 }
 
 
-.contact-form {
+/* .contact-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     background: #ffffffbf;
     padding: 50px;
     margin: 100px;
     border-radius: 20px;
     z-index: 2;
-    /* position: relative; */
-}
+    position: relative;
+} */
 
 .contact-h {
     color : #16a085;
@@ -1066,5 +1066,26 @@ section {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+/* 📱 Mobile adjustments */
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 10px;
+        margin: 10px;
+        width: 100px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .contact-textarea {
+        height: 120px;
+    }
+
+    .contact-input,
+    .contact-textarea,
+    .submit-btn {
+        font-size: 14px;        /* smaller text for mobile */
+    }
 }
 
