@@ -729,30 +729,12 @@
                 
         <form class="l" action="https://formspree.io/f/mgvgdyel" method="POST" style="
         display: flex; flex-direction: column; background: rgba(255, 255, 255, 0.75);; padding: 50px; margin: 100px; border-radius: 20px; z-index: 2; position: relative;">
-        <h4 style="color : #16a085; text-align: center; margin-bottom: 10px; padding-bottom: 10px; font-weight: bold;" >User Inquiry Form</h4>
+        <h4 class="contact-h">User Inquiry Form</h4>
         <label for="email" >E-mail</label>
-            <input  placeholder = "Enter your e-mail address here" type="email" style="
-                padding : 20px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                margin-bottom : 20px;
-                width : 300px;
-                height : 20px;"
-                name="email" required
-            />
+            <input  placeholder = "Enter your e-mail address here" type="email" name="email" class="contact-input" required/>
             <label for="message" >Message</label>
-            <textarea name = "message" placeholder = "Write Your Message Here"  style="
-                border-radius: 10px;
-                padding : 20px;
-                height : 200px;
-                width : 300px;
-                border: 1px solid #ccc;
-                margin-bottom : 20px;" >
-            </textarea>
-            <button type="submit" style="background-color: #16a085; border-radius: 10px; padding : 10px; color : white; font-weight: bold; border: none; ">
-        Submit
- 
-        </button>
+            <textarea name = "message" placeholder = "Write Your Message Here" class="contact-textarea"></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
 
         </form>
             
@@ -793,17 +775,9 @@
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
                 <link rel="stylesheet" href="styles.css">
 
-
-
-
-
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
                 <script src="script.js"></script>
-
-
     </section>
-
-
 
     <!-- Footer -->
     <div class="footer" id="footer">

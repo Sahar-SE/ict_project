@@ -1017,3 +1017,54 @@ section {
     position: relative;
 }
 
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffffbf;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 20px;
+    z-index: 2;
+    /* position: relative; */
+}
+
+.contact-h {
+    color : #16a085;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+.contact-input {
+    padding : 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom : 20px;
+    width : 300px;
+    height : 20px;        
+}
+
+.contact-textarea {
+    border-radius: 10px;
+    padding : 20px;
+    height : 200px;
+    width : 300px;
+    border: 1px solid #ccc;
+    margin-bottom : 20px;
+}
+
+
+.submit-btn {
+    background-color: #16a085;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
