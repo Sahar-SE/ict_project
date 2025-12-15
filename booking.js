@@ -57,8 +57,8 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
     // SEND EMAIL USING EMAILJS
     // ===============================
     emailjs.send(
-        "YOUR_SERVICE_ID",   // 🔴 replace
-        "YOUR_TEMPLATE_ID",  // 🔴 replace
+        "service_nxiu1d6",   // 🔴 replace
+        "template_y4d34u8",  // 🔴 replace
         templateParams
     ).then(function () {
 
