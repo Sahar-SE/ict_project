@@ -1,0 +1,8 @@
+  const firebaseConfig = {
+    apiKey: "AIzaSyBPp7kM7VJi-RR2GSlt04E5iAZPkDVdOWs",
+    authDomain: "twintimesbooking.firebaseapp.com",
+    projectId: "twintimesbooking",
+    storageBucket: "twintimesbooking.firebasestorage.app",
+    messagingSenderId: "510471886060",
+    appId: "1:510471886060:web:e5778e39bc9c7ab7b9c1c9"
+  };

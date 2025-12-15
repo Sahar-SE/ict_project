@@ -249,6 +249,24 @@
   })();
 </script>
 
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBPp7kM7VJi-RR2GSlt04E5iAZPkDVdOWs",
+    authDomain: "twintimesbooking.firebaseapp.com",
+    projectId: "twintimesbooking",
+    storageBucket: "twintimesbooking.firebasestorage.app",
+    messagingSenderId: "510471886060",
+    appId: "1:510471886060:web:e5778e39bc9c7ab7b9c1c9"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
 
 <script src="booking.js"></script>
 </body>

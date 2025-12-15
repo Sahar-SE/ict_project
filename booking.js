@@ -3,12 +3,12 @@
 // ===============================
 const params = new URLSearchParams(window.location.search);
 const tour = params.get("tour");
-const price = parseInt(params.get("price"));
+const price = parseInt(params.get("price")) || 0;
 
 // ===============================
 // DISPLAY TOUR INFO
 // ===============================
-document.getElementById("tourName").textContent = tour;
+document.getElementById("tourName").textContent = tour || "Selected Tour";
 document.getElementById("tourPrice").textContent = price;
 
 // ===============================
@@ -26,16 +26,16 @@ updateTotal();
 personsInput.addEventListener("input", updateTotal);
 
 // ===============================
-// FORM SUBMISSION + EMAIL
+// FORM SUBMISSION
 // ===============================
 document.getElementById("bookingForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
     const date = document.getElementById("tourDate").value;
-    const persons = document.getElementById("persons").value;
+    const persons = parseInt(personsInput.value);
     const payment = document.getElementById("paymentMethod").value;
     const total = price * persons;
 
@@ -45,7 +45,7 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
     const templateParams = {
         tour: tour,
         name: name,
-        email: email,      // EMAIL SENT TO USER
+        email: email,
         phone: phone,
         date: date,
         persons: persons,
@@ -54,27 +54,46 @@ document.getElementById("bookingForm").addEventListener("submit", function (e) {
     };
 
     // ===============================
-    // SEND EMAIL USING EMAILJS
+    // SEND EMAIL
     // ===============================
     emailjs.send(
-        "service_nxiu1d6",   // 🔴 replace
-        "template_y4d34u8",  // 🔴 replace
+        "service_nxiu1d6",      // 🔁 YOUR SERVICE ID
+        "template_y4d34u8",     // 🔁 YOUR TEMPLATE ID
         templateParams
-    ).then(function () {
+    )
+    .then(function () {
+
+        // ===============================
+        // SAVE TO FIREBASE DATABASE
+        // ===============================
+        return db.collection("bookings").add({
+            tour: tour,
+            name: name,
+            email: email,
+            phone: phone,
+            date: date,
+            persons: persons,
+            total: total,
+            payment: payment,
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+        });
+    })
+    .then(function () {
 
         alert(
             "✅ Booking Confirmed!\n\n" +
             "Tour: " + tour + "\n" +
+            "Persons: " + persons + "\n" +
             "Total Amount: Rs. " + total + "\n\n" +
-            "This amount has been deducted from your bank account.\n\n" +
-            "A confirmation email has been sent to your email address."
+            "A confirmation email has been sent to your email.\n" +
+            "This amount has been deducted from your bank account."
         );
 
         document.getElementById("bookingForm").reset();
         updateTotal();
-
-    }).catch(function (error) {
-        alert("❌ Failed to send booking email. Please try again.");
-        console.error("EmailJS Error:", error);
+    })
+    .catch(function (error) {
+        alert("❌ Something went wrong.\n\n" + (error.message || "Please try again."));
+        console.error("Error:", error);
     });
 });
